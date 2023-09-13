@@ -35,7 +35,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* !important to override link colors for <a> elements */
+    color: black !important;
+    /* !important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -90,6 +91,12 @@ a.category-badge>span.badge:hover {
 }
 
 .btt-button {
+    cursor: pointer;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
