@@ -33,16 +33,22 @@ body {
     min-width: 260px;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important;
-    /* !important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -68,18 +74,18 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
-a.category-badge>span.badge:hover {
+a.category-badge > span.badge:hover {
     background: #212529 !important;
-    color: #fff !important
+    color: #fff !important;
 }
 
 .btt-button {
@@ -88,10 +94,6 @@ a.category-badge>span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
-}
-
-.btt-button {
-    cursor: pointer;
 }
 
 .btt-link,
@@ -104,9 +106,9 @@ a.category-badge>span.badge:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
+  .container {
+    max-width: 80%;
+  }
 }
 
 /* fixed top navbar only on medium and up */
