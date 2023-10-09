@@ -180,7 +180,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 if "USE_AWS" in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = "mark279455-boutique-ado"
-    AWS_S3_REGION_NAME = "Europe (London) eu-west-2"
+    AWS_S3_REGION_NAME = "eu-west-2" # "Europe (London) eu-west-2"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
     AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.sc.amazonaws.com"
