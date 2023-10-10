@@ -101,7 +101,6 @@ def edit_product(request, product_id):
         return redirect(reverse("home"))
 
     product = get_object_or_404(Product, pk=product_id)
-    form=ProductForm(instance=product)
 
     if request.method=="POST":
         form=ProductForm(request.POST, request.FILES, instance=product)
